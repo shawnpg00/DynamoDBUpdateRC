@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="javascripts/contextmenu.js"></script>
+    <link rel="stylesheet" href="stylesheets/contextmenu.css" />
+</head>
+
+<body>
+<menu id="ctxMenu">
+    <menu title="Location">
+        <input type="text" name="TILocation" placeholder="19.9909631,73.8034808"><br>
+    </menu>
+    <menu title="NPE ID">
+        <input type="text" name="TINPE ID" placeholder="coll_redalder"><br>
+    </menu>
+    <menu title="Expiration">
+        <input type="text" name="TIExpiration" placeholder="5"><br>
+    </menu>
+    <menu title="Active">
+        <input type="text" name="TIActive" placeholder="false"><br>
+    </menu>
+    <menu title="Edit">
+        <menu title="Cut"></menu>
+        <menu title="Copy"></menu>
+        <menu title="Paste"></menu>
+    </menu>
+</menu>
+<div id="notepad">
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form action="/" method="post">
+            NPE_ID: <input type="text" name="NPE_ID"><br>
+            expiration: <input type="text" name="expiration"><br>
+            Active: <input type="text" name="active"><br>
+            <input type="submit" value="Submit" id="submitbutton">
+        </form>
+    </div>
+</div>
+</body>
+</html>
